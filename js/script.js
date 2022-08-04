@@ -38,11 +38,16 @@ function titleClickHandler(event){
 
 function generateTitleLinks(){
 
-  /* remove contents of titleList */
+    /* remove contents of titleList */
 
-  /* for each article */
+    const titleList = document.querySelector(optTitleListSelector);
+      titleList.innerHTML = '';
 
-    /* get the article id */
+    /* for each article */
+
+    
+
+ /* get the article id */
 
     /* find the title element */
 
@@ -52,6 +57,6 @@ function generateTitleLinks(){
 
     /* insert link into titleList */
 
-}
+  }
 
-generateTitleLinks();
+  generateTitleLinks();
