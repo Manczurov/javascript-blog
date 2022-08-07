@@ -38,7 +38,7 @@ function titleClickHandler(event){
 
 function generateTitleLinks(){
 
-    /* remove contents of titleList */
+      /* remove contents of titleList */
 
     const titleList = document.querySelector(optTitleListSelector);
     
@@ -50,13 +50,11 @@ function generateTitleLinks(){
 
     let html = '';
 
-    for(let article of articles){
-      
-        
+    for(let article of articles){    
 
     /* get the article id */
-
-    const articleId = document.querySelector(id);
+    
+    const articleId = article.querySelector("id");
  
     /* find the title element */
     /* get the title from the title element */
@@ -69,7 +67,7 @@ function generateTitleLinks(){
 
     /* insert link into titleList */
     
-    titleList.insertAdjacentHTML(titleList.innerHTML + linkHTML);
+    titleList.insertAdjacentHTML("beforeend", titleList.innerHTML + linkHTML);
 
     html = html + linkHTML;
 
